@@ -50,13 +50,6 @@ app.get('/api/persons/:id', (req, res, next) => {
 
 app.post('/api/persons', (req, res, next) => {
   const body = req.body
-
-  if (!body.name || !body.number) {
-    return res.status(400).json({
-      error: !body.name ? 'name missing' : 'number missing',
-    })
-  }
-
   const person = new Person({
     name: body.name,
     number: body.number,
