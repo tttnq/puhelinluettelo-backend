@@ -1,1 +1,1 @@
-https://puhelinluettelo-tnq.herokuapp.com/api/persons/
+https://puhelinluettelo-tnq.herokuapp.com/
